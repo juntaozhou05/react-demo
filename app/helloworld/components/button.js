@@ -4,21 +4,24 @@ class Button extends React.Component{
 	constructor(props, context) {
 		super(props, context);
         this.state = {
-			count:1
+			value: 2
 		}
-		this.add = this.add.bind(this);
-    }
+		this.handleChange = this.handleChange.bind(this);
+	}
+	//生成dom
     render() {
+		let value = this.state.value;
         return (
         	<div>
-	            <button onClick={this.add}>Count {this.state.count}</button>
+				<input type="text" value={value} onChange={this.handleChange} />
+        		<p>{value}</p>
         	</div>
         );
 	}
-	add() {
+	handleChange(e) {
 		this.setState({
-			count: this.state.count + 1
-		});
+			value: e.target.value
+		})
 	}
 }
 
