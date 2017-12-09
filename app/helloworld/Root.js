@@ -1,12 +1,16 @@
 import React from 'react';
-import Button from './components/button';
+import Player from './components/Player';
+import "./player.less"
 
 class Root extends React.Component{
     render() {
         return (
             <div>
-                <p>hello world，welcome to the React lesson~</p>
-                <Button></Button>
+                <div className="title">
+                    <img src="../static/images/logo.png" width="50" />
+                    <span>Music Player</span>
+                </div>
+                <Player></Player>
             </div>
         );
     }
