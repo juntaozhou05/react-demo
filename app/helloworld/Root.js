@@ -1,6 +1,6 @@
 import React from 'react';
 import Player from './components/Player';
-import "./player.less"
+import "./root.less"
 
 class Root extends React.Component{
     render() {

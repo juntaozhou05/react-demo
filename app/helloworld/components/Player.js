@@ -1,4 +1,5 @@
 import React from 'react';
+import './player.less'
 
 class Player extends React.Component{
 	constructor(props, context) {
@@ -12,8 +13,8 @@ class Player extends React.Component{
     render() {
 		let value = this.state.value;
         return (
-        	<div>
-				
+        	<div className="player">
+				<div></div>
         	</div>
         );
 	}
