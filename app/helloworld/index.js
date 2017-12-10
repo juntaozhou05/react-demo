@@ -1,13 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import Root from './Root';
+import {Provider} from 'react-redux'
+import {createStore} from 'redux'
+import todoApp from './reducers'
+import App from './components/App'
 
+let store = createStore(todoApp)
 
 render(
-    <AppContainer>
-        <Root />
-    </AppContainer>,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root')
 );
 
