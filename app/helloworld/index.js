@@ -24,11 +24,12 @@ const action = addTodo('learn redux');
 
 store.dispatch(addTodo('Learn Redux'));
 
+let store = createStore(todoApp)
 
 render(
-    <AppContainer>
-        <Root />
-    </AppContainer>,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root')
 );
 
