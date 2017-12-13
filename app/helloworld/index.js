@@ -13,6 +13,7 @@ const action = {
     payload:"learn redux"
 }
 
+
 const ADD_TODO = "添加 TODO";
 function addTodo(text) {
     return {
@@ -20,6 +21,7 @@ function addTodo(text) {
         text
     }
 }
+
 const action = addTodo('learn redux');
 
 store.dispatch(addTodo('Learn Redux'));
