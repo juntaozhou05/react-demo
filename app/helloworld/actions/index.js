@@ -6,12 +6,14 @@ export const addTodo = (text) => {
         text
     }
 }
+
 export const setVisibility = (filter) => {
     return {
         type:"SET_VISIBILITY",
         filter
     }
 }
+
 export const toggleTodo =(id) => {
     return {
         type:"TOGGLE_TODO",
