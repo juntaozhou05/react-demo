@@ -12,8 +12,6 @@ const action = {
     type:"ADD_TODO",
     payload:"learn redux"
 }
-
-
 const ADD_TODO = "添加 TODO";
 function addTodo(text) {
     return {
