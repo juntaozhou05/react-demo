@@ -16,9 +16,6 @@ class Hello extends Component {
                 <button onClick={onClickCH}>翻译成中文</button>
                 <button onClick={onClickEN}>翻译成英文</button>
                 <br/>
-                <Link to={`/number`}>点击跳转</Link>
-                <br/>
-                <Route path={`/number`} component={ConnectNumber}></Route>
             </div>
          )
     }
