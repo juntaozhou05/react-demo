@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ConnectNumber from '../container/ConnectNumber';
-import {Route,Link} from 'react-router-dom'
+import { Button } from 'antd';
 // import PropTypes from 'prop-types'
 
 class Hello extends Component {
@@ -13,8 +12,8 @@ class Hello extends Component {
         return ( 
             <div>
                 <div>{msg}</div>
-                <button onClick={onClickCH}>翻译成中文</button>
-                <button onClick={onClickEN}>翻译成英文</button>
+                <Button onClick={onClickCH}>翻译成中文</Button>
+                <Button onClick={onClickEN}>翻译成英文</Button>
                 <br/>
             </div>
          )
