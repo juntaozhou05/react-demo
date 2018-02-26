@@ -1,13 +1,13 @@
-import {createStore} from 'redux'; 
-import {combineReducers} from 'redux';
-import change from '../reducers/change.js';  
-import number from '../reducers/number.js';
+import { createStore, applyMiddleware } from "redux";
+import { combineReducers } from "redux";
+import ReduxThunk from "redux-thunk";
+import change from "../reducers/change.js";
+import number from "../reducers/number.js";
 
 const appReducer = combineReducers({
-    change,
-    number
+  change,
+  number
 });
 
-const store = createStore(appReducer);  
-export default store
-
+const store = createStore(appReducer, applyMiddleware(ReduxThunk.default));
+export default store;
